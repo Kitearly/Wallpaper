@@ -2,7 +2,7 @@
   // Cloudflare Workers 配置
   // 部署前执行 `npx wrangler kv namespace create WALLS`,
   // 把输出的 id 填到下面 kv_namespaces[].id
-  "name": "wallpaper-api",
+  "name": "wallpaper",
   "main": "src/index.ts",
   "compatibility_date": "2025-03-01",
   "observability": {
