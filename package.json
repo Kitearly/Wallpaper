@@ -1,0 +1,19 @@
+{
+  "name": "wallpaper-api",
+  "version": "0.1.0",
+  "private": true,
+  "description": "随机展示 Bing 壁纸的动态图片 API(Cloudflare Workers + KV)",
+  "scripts": {
+    "dev": "wrangler dev --test-scheduled --port 8789",
+    "deploy": "wrangler deploy",
+    "check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "hono": "^4.4.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.0.0",
+    "typescript": "^5.5.0",
+    "wrangler": "^4.0.0"
+  }
+}
