@@ -22,7 +22,7 @@ const todayPaths = ['/today', '/wallpaper/today'];
 function imageResponse(buf: ArrayBuffer, meta: WallMeta | null, today: boolean): Response {
   const headers = new Headers({
     'Content-Type': 'image/jpeg',
-    // today 全网同图,可进 CDN 缓存;stale-if-error 让 cron 失速/源头异常时
+    // today 全网同图,可进 CDN 缓存;stale-if-error 让 cron 失手/源头异常时
     // 边缘继续供昨天的图(参考 ScreenShot 项目,最多续一天,不开天窗)
     // random 每次都要新意,禁止缓存
     'Cache-Control': today
